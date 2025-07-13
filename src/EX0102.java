@@ -9,5 +9,17 @@ class Exercise6_2 {
 class SutdaCard {
     int num;
     boolean isKwang;
-
+    SutdaCard(int num, boolean isKwang) {
+        this.num = num;
+        this.isKwang = isKwang;
+    }
+    SutdaCard(){
+        this(1, true);
+    }
+    String info() {
+        if (num == 1)
+            return num + "K";
+        else
+            return num +"";
+    }
 }
